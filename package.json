@@ -1,0 +1,23 @@
+{
+  "name": "kmahub-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for KMA API Hub surface observation endpoints.",
+  "type": "module",
+  "bin": {
+    "kmahub-mcp": "./src/server.js"
+  },
+  "scripts": {
+    "start": "node ./src/server.js",
+    "test:mcp": "node ./scripts/smoke-mcp.js",
+    "test:api": "node ./scripts/test-all.js",
+    "test:normal": "node ./scripts/test-normal-criteria.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "undici": "^8.2.0",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

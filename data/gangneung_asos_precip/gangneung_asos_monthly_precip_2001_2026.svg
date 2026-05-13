@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760" role="img" aria-label="Gangneung ASOS monthly precipitation time series">
+  <style>
+    text { font-family: Arial, "Malgun Gothic", sans-serif; fill: #18202a; }
+    .title { font-size: 28px; font-weight: 700; }
+    .subtitle { font-size: 15px; fill: #52606d; }
+    .axis-text { font-size: 12px; fill: #52606d; }
+    .grid { stroke: #d8e0e8; stroke-width: 1; }
+    .axis { stroke: #5d6975; stroke-width: 1.2; }
+    .legend { font-size: 14px; fill: #27313d; }
+  </style>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="86" y="34" class="title">강릉 ASOS 월누적강수량</text>
+  <text x="86" y="58" class="subtitle">지점 105, 2001-01부터 2026-05까지. 막대: 월합계, 선: 12개월 이동평균</text>
+  <line x1="86" x2="1456" y1="670.00" y2="670.00" class="grid"/><text x="74" y="675.00" text-anchor="end" class="axis-text">0</text>
+<line x1="86" x2="1456" y1="550.00" y2="550.00" class="grid"/><text x="74" y="555.00" text-anchor="end" class="axis-text">240</text>
+<line x1="86" x2="1456" y1="430.00" y2="430.00" class="grid"/><text x="74" y="435.00" text-anchor="end" class="axis-text">480</text>
+<line x1="86" x2="1456" y1="310.00" y2="310.00" class="grid"/><text x="74" y="315.00" text-anchor="end" class="axis-text">720</text>
+<line x1="86" x2="1456" y1="190.00" y2="190.00" class="grid"/><text x="74" y="195.00" text-anchor="end" class="axis-text">960</text>
+<line x1="86" x2="1456" y1="70.00" y2="70.00" class="grid"/><text x="74" y="75.00" text-anchor="end" class="axis-text">1200</text>
+  <line x1="86" x2="1456" y1="670" y2="670" class="axis"/>
+  <line x1="86" x2="86" y1="70" y2="670" class="axis"/>
+  <rect x="86.00" y="619.50" width="3.49" height="50.50" fill="#4f8fc9"><title>2001-01: 101.0 mm</title></rect>
+<rect x="90.49" y="621.20" width="3.49" height="48.80" fill="#4f8fc9"><title>2001-02: 97.6 mm</title></rect>
+<rect x="94.98" y="657.25" width="3.49" height="12.75" fill="#4f8fc9"><title>2001-03: 25.5 mm</title></rect>
+<rect x="99.48" y="660.55" width="3.49" height="9.45" fill="#4f8fc9"><title>2001-04: 18.9 mm</title></rect>
+<rect x="103.97" y="657.30" width="3.49" height="12.70" fill="#4f8fc9"><title>2001-05: 25.4 mm</title></rect>
+<rect x="108.46" y="609.35" width="3.49" height="60.65" fill="#4f8fc9"><title>2001-06: 121.3 mm</title></rect>
+<rect x="112.95" y="608.55" width="3.49" height="61.45" fill="#4f8fc9"><title>2001-07: 122.9 mm</title></rect>
+<rect x="117.44" y="629.40" width="3.49" height="40.60" fill="#4f8fc9"><title>2001-08: 81.2 mm</title></rect>
+<rect x="121.93" y="533.40" width="3.49" height="136.60" fill="#4f8fc9"><title>2001-09: 273.2 mm</title></rect>
+<rect x="126.43" y="572.45" width="3.49" height="97.55" fill="#4f8fc9"><title>2001-10: 195.1 mm</title></rect>
+<rect x="130.92" y="652.80" width="3.49" height="17.20" fill="#4f8fc9"><title>2001-11: 34.4 mm</title></rect>
+<rect x="135.41" y="659.45" width="3.49" height="10.55" fill="#4f8fc9"><title>2001-12: 21.1 mm</title></rect>
+<rect x="139.90" y="631.00" width="3.49" height="39.00" fill="#4f8fc9"><title>2002-01: 78.0 mm</title></rect>
+<rect x="144.39" y="670.00" width="3.49" height="0.00" fill="#4f8fc9"><title>2002-02: 0.0 mm</title></rect>
+<rect x="148.89" y="657.20" width="3.49" height="12.80" fill="#4f8fc9"><title>2002-03: 25.6 mm</title></rect>
+<rect x="153.38" y="644.75" width="3.49" height="25.25" fill="#4f8fc9"><title>2002-04: 50.5 mm</title></rect>
+<rect x="157.87" y="630.60" width="3.49" height="39.40" fill="#4f8fc9"><title>2002-05: 78.8 mm</title></rect>
+<rect x="162.36" y="653.35" width="3.49" height="16.65" fill="#4f8fc9"><title>2002-06: 33.3 mm</title></rect>
+<rect x="166.85" y="557.65" width="3.49" height="112.35" fill="#4f8fc9"><title>2002-07: 224.7 mm</title></rect>
+<rect x="171.34" y="101.50" width="3.49" height="568.50" fill="#4f8fc9"><title>2002-08: 1137.0 mm</title></rect>
+<rect x="175.84" y="605.75" width="3.49" height="64.25" fill="#4f8fc9"><title>2002-09: 128.5 mm</title></rect>
+<rect x="180.33" y="580.00" width="3.49" height="90.00" fill="#4f8fc9"><title>2002-10: 180.0 mm</title></rect>
+<rect x="184.82" y="669.80" width="3.49" height="0.20" fill="#4f8fc9"><title>2002-11: 0.4 mm</title></rect>
+<rect x="189.31" y="605.30" width="3.49" height="64.70" fill="#4f8fc9"><title>2002-12: 129.4 mm</title></rect>
+<rect x="193.80" y="639.90" width="3.49" height="30.10" fill="#4f8fc9"><title>2003-01: 60.2 mm</title></rect>
+<rect x="198.30" y="624.65" width="3.49" height="45.35" fill="#4f8fc9"><title>2003-02: 90.7 mm</title></rect>
+<rect x="202.79" y="629.50" width="3.49" height="40.50" fill="#4f8fc9"><title>2003-03: 81.0 mm</title></rect>
+<rect x="207.28" y="570.00" width="3.49" height="100.00" fill="#4f8fc9"><title>2003-04: 200.0 mm</title></rect>
+<rect x="211.77" y="595.10" width="3.49" height="74.90" fill="#4f8fc9"><title>2003-05: 149.8 mm</title></rect>
+<rect x="216.26" y="591.35" width="3.49" height="78.65" fill="#4f8fc9"><title>2003-06: 157.3 mm</title></rect>
+<rect x="220.75" y="558.45" width="3.49" height="111.55" fill="#4f8fc9"><title>2003-07: 223.1 mm</title></rect>
+<rect x="225.25" y="527.85" width="3.49" height="142.15" fill="#4f8fc9"><title>2003-08: 284.3 mm</title></rect>
+<rect x="229.74" y="404.00" width="3.49" height="266.00" fill="#4f8fc9"><title>2003-09: 532.0 mm</title></rect>
+<rect x="234.23" y="640.75" width="3.49" height="29.25" fill="#4f8fc9"><title>2003-10: 58.5 mm</title></rect>
+<rect x="238.72" y="544.25" width="3.49" height="125.75" fill="#4f8fc9"><title>2003-11: 251.5 mm</title></rect>
+<rect x="243.21" y="666.50" width="3.49" height="3.50" fill="#4f8fc9"><title>2003-12: 7.0 mm</title></rect>
+<rect x="247.70" y="663.95" width="3.49" height="6.05" fill="#4f8fc9"><title>2004-01: 12.1 mm</title></rect>
+<rect x="252.20" y="663.55" width="3.49" height="6.45" fill="#4f8fc9"><title>2004-02: 12.9 mm</title></rect>
+<rect x="256.69" y="666.20" width="3.49" height="3.80" fill="#4f8fc9"><title>2004-03: 7.6 mm</title></rect>
+<rect x="261.18" y="588.20" width="3.49" height="81.80" fill="#4f8fc9"><title>2004-04: 163.6 mm</title></rect>
+<rect x="265.67" y="642.95" width="3.49" height="27.05" fill="#4f8fc9"><title>2004-05: 54.1 mm</title></rect>
+<rect x="270.16" y="557.75" width="3.49" height="112.25" fill="#4f8fc9"><title>2004-06: 224.5 mm</title></rect>
+<rect x="274.66" y="467.95" width="3.49" height="202.05" fill="#4f8fc9"><title>2004-07: 404.1 mm</title></rect>
+<rect x="279.15" y="418.30" width="3.49" height="251.70" fill="#4f8fc9"><title>2004-08: 503.4 mm</title></rect>
+<rect x="283.64" y="579.30" width="3.49" height="90.70" fill="#4f8fc9"><title>2004-09: 181.4 mm</title></rect>
+<rect x="288.13" y="660.55" width="3.49" height="9.45" fill="#4f8fc9"><title>2004-10: 18.9 mm</title></rect>
+<rect x="292.62" y="665.05" width="3.49" height="4.95" fill="#4f8fc9"><title>2004-11: 9.9 mm</title></rect>
+<rect x="297.11" y="664.10" width="3.49" height="5.90" fill="#4f8fc9"><title>2004-12: 11.8 mm</title></rect>
+<rect x="301.61" y="653.75" width="3.49" height="16.25" fill="#4f8fc9"><title>2005-01: 32.5 mm</title></rect>
+<rect x="306.10" y="629.85" width="3.49" height="40.15" fill="#4f8fc9"><title>2005-02: 80.3 mm</title></rect>
+<rect x="310.59" y="629.60" width="3.49" height="40.40" fill="#4f8fc9"><title>2005-03: 80.8 mm</title></rect>
+<rect x="315.08" y="650.20" width="3.49" height="19.80" fill="#4f8fc9"><title>2005-04: 39.6 mm</title></rect>
+<rect x="319.57" y="640.65" width="3.49" height="29.35" fill="#4f8fc9"><title>2005-05: 58.7 mm</title></rect>
+<rect x="324.07" y="573.35" width="3.49" height="96.65" fill="#4f8fc9"><title>2005-06: 193.3 mm</title></rect>
+<rect x="328.56" y="560.65" width="3.49" height="109.35" fill="#4f8fc9"><title>2005-07: 218.7 mm</title></rect>
+<rect x="333.05" y="569.50" width="3.49" height="100.50" fill="#4f8fc9"><title>2005-08: 201.0 mm</title></rect>
+<rect x="337.54" y="391.25" width="3.49" height="278.75" fill="#4f8fc9"><title>2005-09: 557.5 mm</title></rect>
+<rect x="342.03" y="578.80" width="3.49" height="91.20" fill="#4f8fc9"><title>2005-10: 182.4 mm</title></rect>
+<rect x="346.52" y="665.75" width="3.49" height="4.25" fill="#4f8fc9"><title>2005-11: 8.5 mm</title></rect>
+<rect x="351.02" y="669.95" width="3.49" height="0.05" fill="#4f8fc9"><title>2005-12: 0.1 mm</title></rect>
+<rect x="355.51" y="648.95" width="3.49" height="21.05" fill="#4f8fc9"><title>2006-01: 42.1 mm</title></rect>
+<rect x="360.00" y="665.15" width="3.49" height="4.85" fill="#4f8fc9"><title>2006-02: 9.7 mm</title></rect>
+<rect x="364.49" y="665.45" width="3.49" height="4.55" fill="#4f8fc9"><title>2006-03: 9.1 mm</title></rect>
+<rect x="368.98" y="618.05" width="3.49" height="51.95" fill="#4f8fc9"><title>2006-04: 103.9 mm</title></rect>
+<rect x="373.48" y="620.70" width="3.49" height="49.30" fill="#4f8fc9"><title>2006-05: 98.6 mm</title></rect>
+<rect x="377.97" y="631.45" width="3.49" height="38.55" fill="#4f8fc9"><title>2006-06: 77.1 mm</title></rect>
+<rect x="382.46" y="291.35" width="3.49" height="378.65" fill="#4f8fc9"><title>2006-07: 757.3 mm</title></rect>
+<rect x="386.95" y="567.95" width="3.49" height="102.05" fill="#4f8fc9"><title>2006-08: 204.1 mm</title></rect>
+<rect x="391.44" y="625.85" width="3.49" height="44.15" fill="#4f8fc9"><title>2006-09: 88.3 mm</title></rect>
+<rect x="395.93" y="499.40" width="3.49" height="170.60" fill="#4f8fc9"><title>2006-10: 341.2 mm</title></rect>
+<rect x="400.43" y="621.65" width="3.49" height="48.35" fill="#4f8fc9"><title>2006-11: 96.7 mm</title></rect>
+<rect x="404.92" y="657.70" width="3.49" height="12.30" fill="#4f8fc9"><title>2006-12: 24.6 mm</title></rect>
+<rect x="409.41" y="661.50" width="3.49" height="8.50" fill="#4f8fc9"><title>2007-01: 17.0 mm</title></rect>
+<rect x="413.90" y="660.45" width="3.49" height="9.55" fill="#4f8fc9"><title>2007-02: 19.1 mm</title></rect>
+<rect x="418.39" y="622.00" width="3.49" height="48.00" fill="#4f8fc9"><title>2007-03: 96.0 mm</title></rect>
+<rect x="422.89" y="647.75" width="3.49" height="22.25" fill="#4f8fc9"><title>2007-04: 44.5 mm</title></rect>
+<rect x="427.38" y="614.25" width="3.49" height="55.75" fill="#4f8fc9"><title>2007-05: 111.5 mm</title></rect>
+<rect x="431.87" y="647.80" width="3.49" height="22.20" fill="#4f8fc9"><title>2007-06: 44.4 mm</title></rect>
+<rect x="436.36" y="514.40" width="3.49" height="155.60" fill="#4f8fc9"><title>2007-07: 311.2 mm</title></rect>
+<rect x="440.85" y="590.55" width="3.49" height="79.45" fill="#4f8fc9"><title>2007-08: 158.9 mm</title></rect>
+<rect x="445.34" y="418.35" width="3.49" height="251.65" fill="#4f8fc9"><title>2007-09: 503.3 mm</title></rect>
+<rect x="449.84" y="633.20" width="3.49" height="36.80" fill="#4f8fc9"><title>2007-10: 73.6 mm</title></rect>
+<rect x="454.33" y="639.70" width="3.49" height="30.30" fill="#4f8fc9"><title>2007-11: 60.6 mm</title></rect>
+<rect x="458.82" y="669.25" width="3.49" height="0.75" fill="#4f8fc9"><title>2007-12: 1.5 mm</title></rect>
+<rect x="463.31" y="628.70" width="3.49" height="41.30" fill="#4f8fc9"><title>2008-01: 82.6 mm</title></rect>
+<rect x="467.80" y="670.00" width="3.49" height="0.00" fill="#4f8fc9"><title>2008-02: 0.0 mm</title></rect>
+<rect x="472.30" y="611.35" width="3.49" height="58.65" fill="#4f8fc9"><title>2008-03: 117.3 mm</title></rect>
+<rect x="476.79" y="652.90" width="3.49" height="17.10" fill="#4f8fc9"><title>2008-04: 34.2 mm</title></rect>
+<rect x="481.28" y="635.35" width="3.49" height="34.65" fill="#4f8fc9"><title>2008-05: 69.3 mm</title></rect>
+<rect x="485.77" y="616.65" width="3.49" height="53.35" fill="#4f8fc9"><title>2008-06: 106.7 mm</title></rect>
+<rect x="490.26" y="508.65" width="3.49" height="161.35" fill="#4f8fc9"><title>2008-07: 322.7 mm</title></rect>
+<rect x="494.75" y="504.70" width="3.49" height="165.30" fill="#4f8fc9"><title>2008-08: 330.6 mm</title></rect>
+<rect x="499.25" y="604.15" width="3.49" height="65.85" fill="#4f8fc9"><title>2008-09: 131.7 mm</title></rect>
+<rect x="503.74" y="648.05" width="3.49" height="21.95" fill="#4f8fc9"><title>2008-10: 43.9 mm</title></rect>
+<rect x="508.23" y="645.45" width="3.49" height="24.55" fill="#4f8fc9"><title>2008-11: 49.1 mm</title></rect>
+<rect x="512.72" y="642.70" width="3.49" height="27.30" fill="#4f8fc9"><title>2008-12: 54.6 mm</title></rect>
+<rect x="517.21" y="658.00" width="3.49" height="12.00" fill="#4f8fc9"><title>2009-01: 24.0 mm</title></rect>
+<rect x="521.70" y="659.70" width="3.49" height="10.30" fill="#4f8fc9"><title>2009-02: 20.6 mm</title></rect>
+<rect x="526.20" y="634.55" width="3.49" height="35.45" fill="#4f8fc9"><title>2009-03: 70.9 mm</title></rect>
+<rect x="530.69" y="642.00" width="3.49" height="28.00" fill="#4f8fc9"><title>2009-04: 56.0 mm</title></rect>
+<rect x="535.18" y="648.50" width="3.49" height="21.50" fill="#4f8fc9"><title>2009-05: 43.0 mm</title></rect>
+<rect x="539.67" y="618.70" width="3.49" height="51.30" fill="#4f8fc9"><title>2009-06: 102.6 mm</title></rect>
+<rect x="544.16" y="467.45" width="3.49" height="202.55" fill="#4f8fc9"><title>2009-07: 405.1 mm</title></rect>
+<rect x="548.66" y="584.90" width="3.49" height="85.10" fill="#4f8fc9"><title>2009-08: 170.2 mm</title></rect>
+<rect x="553.15" y="644.85" width="3.49" height="25.15" fill="#4f8fc9"><title>2009-09: 50.3 mm</title></rect>
+<rect x="557.64" y="654.40" width="3.49" height="15.60" fill="#4f8fc9"><title>2009-10: 31.2 mm</title></rect>
+<rect x="562.13" y="574.20" width="3.49" height="95.80" fill="#4f8fc9"><title>2009-11: 191.6 mm</title></rect>
+<rect x="566.62" y="661.25" width="3.49" height="8.75" fill="#4f8fc9"><title>2009-12: 17.5 mm</title></rect>
+<rect x="571.11" y="652.20" width="3.49" height="17.80" fill="#4f8fc9"><title>2010-01: 35.6 mm</title></rect>
+<rect x="575.61" y="622.65" width="3.49" height="47.35" fill="#4f8fc9"><title>2010-02: 94.7 mm</title></rect>
+<rect x="580.10" y="583.75" width="3.49" height="86.25" fill="#4f8fc9"><title>2010-03: 172.5 mm</title></rect>
+<rect x="584.59" y="655.80" width="3.49" height="14.20" fill="#4f8fc9"><title>2010-04: 28.4 mm</title></rect>
+<rect x="589.08" y="615.00" width="3.49" height="55.00" fill="#4f8fc9"><title>2010-05: 110.0 mm</title></rect>
+<rect x="593.57" y="652.65" width="3.49" height="17.35" fill="#4f8fc9"><title>2010-06: 34.7 mm</title></rect>
+<rect x="598.07" y="625.75" width="3.49" height="44.25" fill="#4f8fc9"><title>2010-07: 88.5 mm</title></rect>
+<rect x="602.56" y="582.30" width="3.49" height="87.70" fill="#4f8fc9"><title>2010-08: 175.4 mm</title></rect>
+<rect x="607.05" y="534.50" width="3.49" height="135.50" fill="#4f8fc9"><title>2010-09: 271.0 mm</title></rect>
+<rect x="611.54" y="643.25" width="3.49" height="26.75" fill="#4f8fc9"><title>2010-10: 53.5 mm</title></rect>
+<rect x="616.03" y="663.75" width="3.49" height="6.25" fill="#4f8fc9"><title>2010-11: 12.5 mm</title></rect>
+<rect x="620.52" y="657.00" width="3.49" height="13.00" fill="#4f8fc9"><title>2010-12: 26.0 mm</title></rect>
+<rect x="625.02" y="663.50" width="3.49" height="6.50" fill="#4f8fc9"><title>2011-01: 13.0 mm</title></rect>
+<rect x="629.51" y="598.00" width="3.49" height="72.00" fill="#4f8fc9"><title>2011-02: 144.0 mm</title></rect>
+<rect x="634.00" y="656.75" width="3.49" height="13.25" fill="#4f8fc9"><title>2011-03: 26.5 mm</title></rect>
+<rect x="638.49" y="603.50" width="3.49" height="66.50" fill="#4f8fc9"><title>2011-04: 133.0 mm</title></rect>
+<rect x="642.98" y="626.00" width="3.49" height="44.00" fill="#4f8fc9"><title>2011-05: 88.0 mm</title></rect>
+<rect x="647.48" y="498.50" width="3.49" height="171.50" fill="#4f8fc9"><title>2011-06: 343.0 mm</title></rect>
+<rect x="651.97" y="510.90" width="3.49" height="159.10" fill="#4f8fc9"><title>2011-07: 318.2 mm</title></rect>
+<rect x="656.46" y="609.40" width="3.49" height="60.60" fill="#4f8fc9"><title>2011-08: 121.2 mm</title></rect>
+<rect x="660.95" y="509.55" width="3.49" height="160.45" fill="#4f8fc9"><title>2011-09: 320.9 mm</title></rect>
+<rect x="665.44" y="637.60" width="3.49" height="32.40" fill="#4f8fc9"><title>2011-10: 64.8 mm</title></rect>
+<rect x="669.93" y="603.55" width="3.49" height="66.45" fill="#4f8fc9"><title>2011-11: 132.9 mm</title></rect>
+<rect x="674.43" y="617.50" width="3.49" height="52.50" fill="#4f8fc9"><title>2011-12: 105.0 mm</title></rect>
+<rect x="678.92" y="650.50" width="3.49" height="19.50" fill="#4f8fc9"><title>2012-01: 39.0 mm</title></rect>
+<rect x="683.41" y="658.45" width="3.49" height="11.55" fill="#4f8fc9"><title>2012-02: 23.1 mm</title></rect>
+<rect x="687.90" y="606.65" width="3.49" height="63.35" fill="#4f8fc9"><title>2012-03: 126.7 mm</title></rect>
+<rect x="692.39" y="606.75" width="3.49" height="63.25" fill="#4f8fc9"><title>2012-04: 126.5 mm</title></rect>
+<rect x="696.89" y="643.65" width="3.49" height="26.35" fill="#4f8fc9"><title>2012-05: 52.7 mm</title></rect>
+<rect x="701.38" y="656.60" width="3.49" height="13.40" fill="#4f8fc9"><title>2012-06: 26.8 mm</title></rect>
+<rect x="705.87" y="539.40" width="3.49" height="130.60" fill="#4f8fc9"><title>2012-07: 261.2 mm</title></rect>
+<rect x="710.36" y="522.35" width="3.49" height="147.65" fill="#4f8fc9"><title>2012-08: 295.3 mm</title></rect>
+<rect x="714.85" y="524.65" width="3.49" height="145.35" fill="#4f8fc9"><title>2012-09: 290.7 mm</title></rect>
+<rect x="719.34" y="664.70" width="3.49" height="5.30" fill="#4f8fc9"><title>2012-10: 10.6 mm</title></rect>
+<rect x="723.84" y="657.20" width="3.49" height="12.80" fill="#4f8fc9"><title>2012-11: 25.6 mm</title></rect>
+<rect x="728.33" y="648.40" width="3.49" height="21.60" fill="#4f8fc9"><title>2012-12: 43.2 mm</title></rect>
+<rect x="732.82" y="642.70" width="3.49" height="27.30" fill="#4f8fc9"><title>2013-01: 54.6 mm</title></rect>
+<rect x="737.31" y="663.20" width="3.49" height="6.80" fill="#4f8fc9"><title>2013-02: 13.6 mm</title></rect>
+<rect x="741.80" y="629.10" width="3.49" height="40.90" fill="#4f8fc9"><title>2013-03: 81.8 mm</title></rect>
+<rect x="746.30" y="641.00" width="3.49" height="29.00" fill="#4f8fc9"><title>2013-04: 58.0 mm</title></rect>
+<rect x="750.79" y="630.65" width="3.49" height="39.35" fill="#4f8fc9"><title>2013-05: 78.7 mm</title></rect>
+<rect x="755.28" y="652.00" width="3.49" height="18.00" fill="#4f8fc9"><title>2013-06: 36.0 mm</title></rect>
+<rect x="759.77" y="549.05" width="3.49" height="120.95" fill="#4f8fc9"><title>2013-07: 241.9 mm</title></rect>
+<rect x="764.26" y="642.70" width="3.49" height="27.30" fill="#4f8fc9"><title>2013-08: 54.6 mm</title></rect>
+<rect x="768.75" y="602.25" width="3.49" height="67.75" fill="#4f8fc9"><title>2013-09: 135.5 mm</title></rect>
+<rect x="773.25" y="604.60" width="3.49" height="65.40" fill="#4f8fc9"><title>2013-10: 130.8 mm</title></rect>
+<rect x="777.74" y="665.10" width="3.49" height="4.90" fill="#4f8fc9"><title>2013-11: 9.8 mm</title></rect>
+<rect x="782.23" y="656.80" width="3.49" height="13.20" fill="#4f8fc9"><title>2013-12: 26.4 mm</title></rect>
+<rect x="786.72" y="647.00" width="3.49" height="23.00" fill="#4f8fc9"><title>2014-01: 46.0 mm</title></rect>
+<rect x="791.21" y="585.55" width="3.49" height="84.45" fill="#4f8fc9"><title>2014-02: 168.9 mm</title></rect>
+<rect x="795.70" y="642.35" width="3.49" height="27.65" fill="#4f8fc9"><title>2014-03: 55.3 mm</title></rect>
+<rect x="800.20" y="575.35" width="3.49" height="94.65" fill="#4f8fc9"><title>2014-04: 189.3 mm</title></rect>
+<rect x="804.69" y="665.05" width="3.49" height="4.95" fill="#4f8fc9"><title>2014-05: 9.9 mm</title></rect>
+<rect x="809.18" y="642.15" width="3.49" height="27.85" fill="#4f8fc9"><title>2014-06: 55.7 mm</title></rect>
+<rect x="813.67" y="615.25" width="3.49" height="54.75" fill="#4f8fc9"><title>2014-07: 109.5 mm</title></rect>
+<rect x="818.16" y="501.55" width="3.49" height="168.45" fill="#4f8fc9"><title>2014-08: 336.9 mm</title></rect>
+<rect x="822.66" y="563.95" width="3.49" height="106.05" fill="#4f8fc9"><title>2014-09: 212.1 mm</title></rect>
+<rect x="827.15" y="609.90" width="3.49" height="60.10" fill="#4f8fc9"><title>2014-10: 120.2 mm</title></rect>
+<rect x="831.64" y="627.75" width="3.49" height="42.25" fill="#4f8fc9"><title>2014-11: 84.5 mm</title></rect>
+<rect x="836.13" y="669.80" width="3.49" height="0.20" fill="#4f8fc9"><title>2014-12: 0.4 mm</title></rect>
+<rect x="840.62" y="659.80" width="3.49" height="10.20" fill="#4f8fc9"><title>2015-01: 20.4 mm</title></rect>
+<rect x="845.11" y="663.45" width="3.49" height="6.55" fill="#4f8fc9"><title>2015-02: 13.1 mm</title></rect>
+<rect x="849.61" y="658.95" width="3.49" height="11.05" fill="#4f8fc9"><title>2015-03: 22.1 mm</title></rect>
+<rect x="854.10" y="631.60" width="3.49" height="38.40" fill="#4f8fc9"><title>2015-04: 76.8 mm</title></rect>
+<rect x="858.59" y="668.45" width="3.49" height="1.55" fill="#4f8fc9"><title>2015-05: 3.1 mm</title></rect>
+<rect x="863.08" y="582.50" width="3.49" height="87.50" fill="#4f8fc9"><title>2015-06: 175.0 mm</title></rect>
+<rect x="867.57" y="638.55" width="3.49" height="31.45" fill="#4f8fc9"><title>2015-07: 62.9 mm</title></rect>
+<rect x="872.07" y="557.60" width="3.49" height="112.40" fill="#4f8fc9"><title>2015-08: 224.8 mm</title></rect>
+<rect x="876.56" y="635.00" width="3.49" height="35.00" fill="#4f8fc9"><title>2015-09: 70.0 mm</title></rect>
+<rect x="881.05" y="659.50" width="3.49" height="10.50" fill="#4f8fc9"><title>2015-10: 21.0 mm</title></rect>
+<rect x="885.54" y="495.55" width="3.49" height="174.45" fill="#4f8fc9"><title>2015-11: 348.9 mm</title></rect>
+<rect x="890.03" y="665.35" width="3.49" height="4.65" fill="#4f8fc9"><title>2015-12: 9.3 mm</title></rect>
+<rect x="894.52" y="656.30" width="3.49" height="13.70" fill="#4f8fc9"><title>2016-01: 27.4 mm</title></rect>
+<rect x="899.02" y="645.75" width="3.49" height="24.25" fill="#4f8fc9"><title>2016-02: 48.5 mm</title></rect>
+<rect x="903.51" y="655.35" width="3.49" height="14.65" fill="#4f8fc9"><title>2016-03: 29.3 mm</title></rect>
+<rect x="908.00" y="633.50" width="3.49" height="36.50" fill="#4f8fc9"><title>2016-04: 73.0 mm</title></rect>
+<rect x="912.49" y="653.20" width="3.49" height="16.80" fill="#4f8fc9"><title>2016-05: 33.6 mm</title></rect>
+<rect x="916.98" y="649.65" width="3.49" height="20.35" fill="#4f8fc9"><title>2016-06: 40.7 mm</title></rect>
+<rect x="921.48" y="457.90" width="3.49" height="212.10" fill="#4f8fc9"><title>2016-07: 424.2 mm</title></rect>
+<rect x="925.97" y="528.70" width="3.49" height="141.30" fill="#4f8fc9"><title>2016-08: 282.6 mm</title></rect>
+<rect x="930.46" y="617.60" width="3.49" height="52.40" fill="#4f8fc9"><title>2016-09: 104.8 mm</title></rect>
+<rect x="934.95" y="630.95" width="3.49" height="39.05" fill="#4f8fc9"><title>2016-10: 78.1 mm</title></rect>
+<rect x="939.44" y="653.25" width="3.49" height="16.75" fill="#4f8fc9"><title>2016-11: 33.5 mm</title></rect>
+<rect x="943.93" y="628.75" width="3.49" height="41.25" fill="#4f8fc9"><title>2016-12: 82.5 mm</title></rect>
+<rect x="948.43" y="645.75" width="3.49" height="24.25" fill="#4f8fc9"><title>2017-01: 48.5 mm</title></rect>
+<rect x="952.92" y="668.25" width="3.49" height="1.75" fill="#4f8fc9"><title>2017-02: 3.5 mm</title></rect>
+<rect x="957.41" y="645.75" width="3.49" height="24.25" fill="#4f8fc9"><title>2017-03: 48.5 mm</title></rect>
+<rect x="961.90" y="650.10" width="3.49" height="19.90" fill="#4f8fc9"><title>2017-04: 39.8 mm</title></rect>
+<rect x="966.39" y="657.50" width="3.49" height="12.50" fill="#4f8fc9"><title>2017-05: 25.0 mm</title></rect>
+<rect x="970.89" y="656.40" width="3.49" height="13.60" fill="#4f8fc9"><title>2017-06: 27.2 mm</title></rect>
+<rect x="975.38" y="550.95" width="3.49" height="119.05" fill="#4f8fc9"><title>2017-07: 238.1 mm</title></rect>
+<rect x="979.87" y="447.95" width="3.49" height="222.05" fill="#4f8fc9"><title>2017-08: 444.1 mm</title></rect>
+<rect x="984.36" y="647.15" width="3.49" height="22.85" fill="#4f8fc9"><title>2017-09: 45.7 mm</title></rect>
+<rect x="988.85" y="612.75" width="3.49" height="57.25" fill="#4f8fc9"><title>2017-10: 114.5 mm</title></rect>
+<rect x="993.34" y="649.25" width="3.49" height="20.75" fill="#4f8fc9"><title>2017-11: 41.5 mm</title></rect>
+<rect x="997.84" y="667.25" width="3.49" height="2.75" fill="#4f8fc9"><title>2017-12: 5.5 mm</title></rect>
+<rect x="1002.33" y="668.75" width="3.49" height="1.25" fill="#4f8fc9"><title>2018-01: 2.5 mm</title></rect>
+<rect x="1006.82" y="644.00" width="3.49" height="26.00" fill="#4f8fc9"><title>2018-02: 52.0 mm</title></rect>
+<rect x="1011.31" y="623.00" width="3.49" height="47.00" fill="#4f8fc9"><title>2018-03: 94.0 mm</title></rect>
+<rect x="1015.80" y="594.30" width="3.49" height="75.70" fill="#4f8fc9"><title>2018-04: 151.4 mm</title></rect>
+<rect x="1020.30" y="588.55" width="3.49" height="81.45" fill="#4f8fc9"><title>2018-05: 162.9 mm</title></rect>
+<rect x="1024.79" y="650.70" width="3.49" height="19.30" fill="#4f8fc9"><title>2018-06: 38.6 mm</title></rect>
+<rect x="1029.28" y="572.25" width="3.49" height="97.75" fill="#4f8fc9"><title>2018-07: 195.5 mm</title></rect>
+<rect x="1033.77" y="460.45" width="3.49" height="209.55" fill="#4f8fc9"><title>2018-08: 419.1 mm</title></rect>
+<rect x="1038.26" y="589.40" width="3.49" height="80.60" fill="#4f8fc9"><title>2018-09: 161.2 mm</title></rect>
+<rect x="1042.75" y="546.00" width="3.49" height="124.00" fill="#4f8fc9"><title>2018-10: 248.0 mm</title></rect>
+<rect x="1047.25" y="644.35" width="3.49" height="25.65" fill="#4f8fc9"><title>2018-11: 51.3 mm</title></rect>
+<rect x="1051.74" y="658.55" width="3.49" height="11.45" fill="#4f8fc9"><title>2018-12: 22.9 mm</title></rect>
+<rect x="1056.23" y="661.70" width="3.49" height="8.30" fill="#4f8fc9"><title>2019-01: 16.6 mm</title></rect>
+<rect x="1060.72" y="661.15" width="3.49" height="8.85" fill="#4f8fc9"><title>2019-02: 17.7 mm</title></rect>
+<rect x="1065.21" y="645.20" width="3.49" height="24.80" fill="#4f8fc9"><title>2019-03: 49.6 mm</title></rect>
+<rect x="1069.70" y="627.25" width="3.49" height="42.75" fill="#4f8fc9"><title>2019-04: 85.5 mm</title></rect>
+<rect x="1074.20" y="667.75" width="3.49" height="2.25" fill="#4f8fc9"><title>2019-05: 4.5 mm</title></rect>
+<rect x="1078.69" y="603.90" width="3.49" height="66.10" fill="#4f8fc9"><title>2019-06: 132.2 mm</title></rect>
+<rect x="1083.18" y="559.60" width="3.49" height="110.40" fill="#4f8fc9"><title>2019-07: 220.8 mm</title></rect>
+<rect x="1087.67" y="537.75" width="3.49" height="132.25" fill="#4f8fc9"><title>2019-08: 264.5 mm</title></rect>
+<rect x="1092.16" y="553.35" width="3.49" height="116.65" fill="#4f8fc9"><title>2019-09: 233.3 mm</title></rect>
+<rect x="1096.66" y="402.00" width="3.49" height="268.00" fill="#4f8fc9"><title>2019-10: 536.0 mm</title></rect>
+<rect x="1101.15" y="617.65" width="3.49" height="52.35" fill="#4f8fc9"><title>2019-11: 104.7 mm</title></rect>
+<rect x="1105.64" y="667.45" width="3.49" height="2.55" fill="#4f8fc9"><title>2019-12: 5.1 mm</title></rect>
+<rect x="1110.13" y="616.25" width="3.49" height="53.75" fill="#4f8fc9"><title>2020-01: 107.5 mm</title></rect>
+<rect x="1114.62" y="631.25" width="3.49" height="38.75" fill="#4f8fc9"><title>2020-02: 77.5 mm</title></rect>
+<rect x="1119.11" y="646.45" width="3.49" height="23.55" fill="#4f8fc9"><title>2020-03: 47.1 mm</title></rect>
+<rect x="1123.61" y="637.20" width="3.49" height="32.80" fill="#4f8fc9"><title>2020-04: 65.6 mm</title></rect>
+<rect x="1128.10" y="622.25" width="3.49" height="47.75" fill="#4f8fc9"><title>2020-05: 95.5 mm</title></rect>
+<rect x="1132.59" y="534.80" width="3.49" height="135.20" fill="#4f8fc9"><title>2020-06: 270.4 mm</title></rect>
+<rect x="1137.08" y="482.05" width="3.49" height="187.95" fill="#4f8fc9"><title>2020-07: 375.9 mm</title></rect>
+<rect x="1141.57" y="594.80" width="3.49" height="75.20" fill="#4f8fc9"><title>2020-08: 150.4 mm</title></rect>
+<rect x="1146.07" y="363.10" width="3.49" height="306.90" fill="#4f8fc9"><title>2020-09: 613.8 mm</title></rect>
+<rect x="1150.56" y="669.70" width="3.49" height="0.30" fill="#4f8fc9"><title>2020-10: 0.6 mm</title></rect>
+<rect x="1155.05" y="666.15" width="3.49" height="3.85" fill="#4f8fc9"><title>2020-11: 7.7 mm</title></rect>
+<rect x="1159.54" y="669.55" width="3.49" height="0.45" fill="#4f8fc9"><title>2020-12: 0.9 mm</title></rect>
+<rect x="1164.03" y="664.30" width="3.49" height="5.70" fill="#4f8fc9"><title>2021-01: 11.4 mm</title></rect>
+<rect x="1168.52" y="667.45" width="3.49" height="2.55" fill="#4f8fc9"><title>2021-02: 5.1 mm</title></rect>
+<rect x="1173.02" y="609.00" width="3.49" height="61.00" fill="#4f8fc9"><title>2021-03: 122.0 mm</title></rect>
+<rect x="1177.51" y="615.95" width="3.49" height="54.05" fill="#4f8fc9"><title>2021-04: 108.1 mm</title></rect>
+<rect x="1182.00" y="591.25" width="3.49" height="78.75" fill="#4f8fc9"><title>2021-05: 157.5 mm</title></rect>
+<rect x="1186.49" y="653.75" width="3.49" height="16.25" fill="#4f8fc9"><title>2021-06: 32.5 mm</title></rect>
+<rect x="1190.98" y="598.90" width="3.49" height="71.10" fill="#4f8fc9"><title>2021-07: 142.2 mm</title></rect>
+<rect x="1195.48" y="450.95" width="3.49" height="219.05" fill="#4f8fc9"><title>2021-08: 438.1 mm</title></rect>
+<rect x="1199.97" y="614.20" width="3.49" height="55.80" fill="#4f8fc9"><title>2021-09: 111.6 mm</title></rect>
+<rect x="1204.46" y="604.55" width="3.49" height="65.45" fill="#4f8fc9"><title>2021-10: 130.9 mm</title></rect>
+<rect x="1208.95" y="663.45" width="3.49" height="6.55" fill="#4f8fc9"><title>2021-11: 13.1 mm</title></rect>
+<rect x="1213.44" y="648.05" width="3.49" height="21.95" fill="#4f8fc9"><title>2021-12: 43.9 mm</title></rect>
+<rect x="1217.93" y="666.30" width="3.49" height="3.70" fill="#4f8fc9"><title>2022-01: 7.4 mm</title></rect>
+<rect x="1222.43" y="669.40" width="3.49" height="0.60" fill="#4f8fc9"><title>2022-02: 1.2 mm</title></rect>
+<rect x="1226.92" y="618.55" width="3.49" height="51.45" fill="#4f8fc9"><title>2022-03: 102.9 mm</title></rect>
+<rect x="1231.41" y="635.60" width="3.49" height="34.40" fill="#4f8fc9"><title>2022-04: 68.8 mm</title></rect>
+<rect x="1235.90" y="667.10" width="3.49" height="2.90" fill="#4f8fc9"><title>2022-05: 5.8 mm</title></rect>
+<rect x="1240.39" y="577.00" width="3.49" height="93.00" fill="#4f8fc9"><title>2022-06: 186.0 mm</title></rect>
+<rect x="1244.89" y="556.05" width="3.49" height="113.95" fill="#4f8fc9"><title>2022-07: 227.9 mm</title></rect>
+<rect x="1249.38" y="516.25" width="3.49" height="153.75" fill="#4f8fc9"><title>2022-08: 307.5 mm</title></rect>
+<rect x="1253.87" y="568.75" width="3.49" height="101.25" fill="#4f8fc9"><title>2022-09: 202.5 mm</title></rect>
+<rect x="1258.36" y="523.40" width="3.49" height="146.60" fill="#4f8fc9"><title>2022-10: 293.2 mm</title></rect>
+<rect x="1262.85" y="638.85" width="3.49" height="31.15" fill="#4f8fc9"><title>2022-11: 62.3 mm</title></rect>
+<rect x="1267.34" y="670.00" width="3.49" height="0.00" fill="#4f8fc9"><title>2022-12: 0.0 mm</title></rect>
+<rect x="1271.84" y="631.05" width="3.49" height="38.95" fill="#4f8fc9"><title>2023-01: 77.9 mm</title></rect>
+<rect x="1276.33" y="650.75" width="3.49" height="19.25" fill="#4f8fc9"><title>2023-02: 38.5 mm</title></rect>
+<rect x="1280.82" y="665.60" width="3.49" height="4.40" fill="#4f8fc9"><title>2023-03: 8.8 mm</title></rect>
+<rect x="1285.31" y="653.30" width="3.49" height="16.70" fill="#4f8fc9"><title>2023-04: 33.4 mm</title></rect>
+<rect x="1289.80" y="624.45" width="3.49" height="45.55" fill="#4f8fc9"><title>2023-05: 91.1 mm</title></rect>
+<rect x="1294.30" y="590.00" width="3.49" height="80.00" fill="#4f8fc9"><title>2023-06: 160.0 mm</title></rect>
+<rect x="1298.79" y="617.65" width="3.49" height="52.35" fill="#4f8fc9"><title>2023-07: 104.7 mm</title></rect>
+<rect x="1303.28" y="409.60" width="3.49" height="260.40" fill="#4f8fc9"><title>2023-08: 520.8 mm</title></rect>
+<rect x="1307.77" y="551.60" width="3.49" height="118.40" fill="#4f8fc9"><title>2023-09: 236.8 mm</title></rect>
+<rect x="1312.26" y="656.95" width="3.49" height="13.05" fill="#4f8fc9"><title>2023-10: 26.1 mm</title></rect>
+<rect x="1316.75" y="649.50" width="3.49" height="20.50" fill="#4f8fc9"><title>2023-11: 41.0 mm</title></rect>
+<rect x="1321.25" y="555.40" width="3.49" height="114.60" fill="#4f8fc9"><title>2023-12: 229.2 mm</title></rect>
+<rect x="1325.74" y="646.60" width="3.49" height="23.40" fill="#4f8fc9"><title>2024-01: 46.8 mm</title></rect>
+<rect x="1330.23" y="582.35" width="3.49" height="87.65" fill="#4f8fc9"><title>2024-02: 175.3 mm</title></rect>
+<rect x="1334.72" y="637.00" width="3.49" height="33.00" fill="#4f8fc9"><title>2024-03: 66.0 mm</title></rect>
+<rect x="1339.21" y="649.05" width="3.49" height="20.95" fill="#4f8fc9"><title>2024-04: 41.9 mm</title></rect>
+<rect x="1343.70" y="631.60" width="3.49" height="38.40" fill="#4f8fc9"><title>2024-05: 76.8 mm</title></rect>
+<rect x="1348.20" y="623.10" width="3.49" height="46.90" fill="#4f8fc9"><title>2024-06: 93.8 mm</title></rect>
+<rect x="1352.69" y="612.15" width="3.49" height="57.85" fill="#4f8fc9"><title>2024-07: 115.7 mm</title></rect>
+<rect x="1357.18" y="626.40" width="3.49" height="43.60" fill="#4f8fc9"><title>2024-08: 87.2 mm</title></rect>
+<rect x="1361.67" y="430.25" width="3.49" height="239.75" fill="#4f8fc9"><title>2024-09: 479.5 mm</title></rect>
+<rect x="1366.16" y="586.30" width="3.49" height="83.70" fill="#4f8fc9"><title>2024-10: 167.4 mm</title></rect>
+<rect x="1370.66" y="653.55" width="3.49" height="16.45" fill="#4f8fc9"><title>2024-11: 32.9 mm</title></rect>
+<rect x="1375.15" y="661.55" width="3.49" height="8.45" fill="#4f8fc9"><title>2024-12: 16.9 mm</title></rect>
+<rect x="1379.64" y="661.75" width="3.49" height="8.25" fill="#4f8fc9"><title>2025-01: 16.5 mm</title></rect>
+<rect x="1384.13" y="670.00" width="3.49" height="0.00" fill="#4f8fc9"><title>2025-02: 0.0 mm</title></rect>
+<rect x="1388.62" y="610.10" width="3.49" height="59.90" fill="#4f8fc9"><title>2025-03: 119.8 mm</title></rect>
+<rect x="1393.11" y="656.90" width="3.49" height="13.10" fill="#4f8fc9"><title>2025-04: 26.2 mm</title></rect>
+<rect x="1397.61" y="643.10" width="3.49" height="26.90" fill="#4f8fc9"><title>2025-05: 53.8 mm</title></rect>
+<rect x="1402.10" y="660.70" width="3.49" height="9.30" fill="#4f8fc9"><title>2025-06: 18.6 mm</title></rect>
+<rect x="1406.59" y="605.90" width="3.49" height="64.10" fill="#4f8fc9"><title>2025-07: 128.2 mm</title></rect>
+<rect x="1411.08" y="649.45" width="3.49" height="20.55" fill="#4f8fc9"><title>2025-08: 41.1 mm</title></rect>
+<rect x="1415.57" y="500.10" width="3.49" height="169.90" fill="#4f8fc9"><title>2025-09: 339.8 mm</title></rect>
+<rect x="1420.07" y="426.90" width="3.49" height="243.10" fill="#4f8fc9"><title>2025-10: 486.2 mm</title></rect>
+<rect x="1424.56" y="661.35" width="3.49" height="8.65" fill="#4f8fc9"><title>2025-11: 17.3 mm</title></rect>
+<rect x="1429.05" y="665.65" width="3.49" height="4.35" fill="#4f8fc9"><title>2025-12: 8.7 mm</title></rect>
+<rect x="1433.54" y="668.15" width="3.49" height="1.85" fill="#4f8fc9"><title>2026-01: 3.7 mm</title></rect>
+<rect x="1438.03" y="658.45" width="3.49" height="11.55" fill="#4f8fc9"><title>2026-02: 23.1 mm</title></rect>
+<rect x="1442.52" y="614.90" width="3.49" height="55.10" fill="#4f8fc9"><title>2026-03: 110.2 mm</title></rect>
+<rect x="1447.02" y="654.05" width="3.49" height="15.95" fill="#4f8fc9"><title>2026-04: 31.9 mm</title></rect>
+<rect x="1451.51" y="650.50" width="3.49" height="19.50" fill="#4f8fc9"><title>2026-05: 39.0 mm</title></rect>
+  <polyline points="87.74590163934427,619.50 92.23770491803279,620.35 96.72950819672131,632.65 101.22131147540985,639.63 105.71311475409837,643.16 110.20491803278689,637.52 114.69672131147541,633.39 119.18852459016394,632.89 123.68032786885247,621.83 128.17213114754097,616.89 132.6639344262295,620.16 137.155737704918,623.43 141.64754098360655,624.39 146.13934426229508,628.46 150.6311475409836,628.45 155.12295081967213,627.14 159.61475409836066,624.91 164.10655737704917,628.58 168.59836065573768,624.34 173.09016393442622,580.35 177.58196721311475,586.38 182.07377049180326,587.00 186.5655737704918,588.42 191.05737704918033,583.91 195.54918032786884,584.65 200.04098360655738,580.87 204.5327868852459,578.56 209.02459016393442,572.33 213.51639344262293,569.38 218.00819672131146,564.21 222.5,564.27 226.9918032786885,599.80 231.48360655737704,582.99 235.97540983606555,588.05 240.4672131147541,577.59 244.95901639344262,582.69 249.45081967213113,584.70 253.94262295081967,587.94 258.4344262295082,591.00 262.92622950819674,592.51 267.41803278688525,596.50 271.90983606557376,593.70 276.40163934426226,586.16 280.8934426229508,577.03 285.38524590163934,591.64 289.8770491803279,593.29 294.3688524590164,603.35 298.8606557377049,603.15 303.3524590163934,602.30 307.84426229508193,599.50 312.3360655737705,596.45 316.827868852459,601.61 321.31967213114757,601.42 325.8114754098361,602.72 330.3032786885246,610.45 334.7950819672131,623.05 339.2868852459016,607.38 343.77868852459017,600.56 348.2704918032787,600.62 352.7622950819672,601.11 357.25409836065575,600.71 361.74590163934425,603.65 366.23770491803276,606.64 370.7295081967213,603.96 375.22131147540983,602.30 379.71311475409834,607.14 384.20491803278685,584.70 388.6967213114754,584.57 393.1885245901639,604.12 397.68032786885243,597.50 402.172131147541,593.83 406.6639344262295,592.80 411.155737704918,593.85 415.6475409836066,593.46 420.1393442622951,589.84 424.6311475409836,592.31 429.1229508196721,591.77 433.61475409836066,593.14 438.10655737704917,611.73 442.5983606557377,613.61 447.09016393442624,596.32 451.58196721311475,607.47 456.07377049180326,608.97 460.56557377049177,609.93 465.05737704918033,607.20 469.54918032786884,608.00 474.04098360655735,607.11 478.5327868852459,607.54 483.0245901639344,609.30 487.5163934426229,606.70 492.0081967213115,606.22 496.5,599.07 500.9918032786885,614.55 505.483606557377,615.79 509.9754098360656,616.27 514.4672131147541,614.05 518.9590163934427,616.50 523.4508196721313,615.64 527.9426229508197,617.57 532.4344262295083,616.66 536.9262295081968,617.76 541.4180327868853,617.93 545.9098360655738,614.50 550.4016393442623,621.18 554.8934426229509,624.57 559.3852459016393,625.10 563.877049180328,619.16 568.3688524590165,620.71 572.860655737705,620.23 577.3524590163935,617.14 581.844262295082,612.90 586.3360655737706,614.05 590.827868852459,611.26 595.3196721311476,614.09 599.8114754098361,627.28 604.3032786885246,627.07 608.7950819672132,617.87 613.2868852459017,616.94 617.7786885245902,624.40 622.2704918032788,624.05 626.7622950819673,624.99 631.2540983606558,622.94 635.7459016393443,629.02 640.2377049180328,624.66 644.7295081967213,625.58 649.2213114754098,612.73 653.7131147540985,603.16 658.204918032787,605.42 662.6967213114755,603.34 667.188524590164,602.87 671.6803278688525,597.85 676.172131147541,594.56 680.6639344262295,593.48 685.1557377049181,598.52 689.6475409836066,594.34 694.1393442622951,594.61 698.6311475409836,596.08 703.1229508196722,609.26 707.6147540983607,611.63 712.1065573770493,604.38 716.5983606557378,605.64 721.0901639344263,607.90 725.5819672131148,612.37 730.0737704918033,614.94 734.5655737704918,614.29 739.0573770491803,614.69 743.549180327869,616.56 748.0409836065575,619.41 752.532786885246,618.33 757.0245901639345,617.95 761.516393442623,618.75 766.0081967213115,628.78 770.5,635.25 774.9918032786886,630.24 779.4836065573771,630.90 783.9754098360656,631.60 788.4672131147541,631.95 792.9590163934427,625.48 797.4508196721312,626.59 801.9426229508197,621.12 806.4344262295083,623.98 810.9262295081968,623.16 815.4180327868853,628.68 819.9098360655738,616.92 824.4016393442623,613.73 828.8934426229508,614.17 833.3852459016393,611.05 837.877049180328,612.14 842.3688524590165,613.20 846.860655737705,619.70 851.3524590163935,621.08 855.844262295082,625.77 860.3360655737705,626.05 864.8278688524591,621.08 869.3196721311476,623.02 873.8114754098361,627.69 878.3032786885246,633.61 882.7950819672132,637.75 887.2868852459017,626.73 891.7786885245902,626.36 896.2704918032788,626.07 900.7622950819673,624.59 905.2540983606558,624.29 909.7459016393443,624.45 914.2377049180328,623.18 918.7295081967213,628.77 923.2213114754098,613.72 927.7131147540985,611.31 932.204918032787,609.86 936.6967213114755,607.48 941.188524590164,620.63 945.6803278688525,617.58 950.172131147541,616.70 954.6639344262295,618.57 959.1557377049181,617.77 963.6475409836066,619.15 968.1393442622951,619.51 972.6311475409836,620.08 977.1229508196722,627.83 981.6147540983607,621.10 986.1065573770493,623.56 990.5983606557378,622.05 995.0901639344263,621.71 999.5819672131148,624.92 1004.0737704918033,626.84 1008.5655737704918,624.82 1013.0573770491803,622.92 1017.549180327869,618.27 1022.0409836065575,612.52 1026.532786885246,612.05 1031.0245901639344,613.83 1035.516393442623,614.87 1040.0081967213116,610.05 1044.5,604.49 1048.9918032786886,604.08 1053.483606557377,603.36 1057.9754098360656,602.77 1062.4672131147543,604.20 1066.9590163934427,606.05 1071.450819672131,608.80 1075.9426229508197,615.40 1080.4344262295083,611.50 1084.926229508197,610.44 1089.4180327868853,616.88 1093.9098360655737,613.88 1098.4016393442623,601.88 1102.893442622951,599.65 1107.3852459016393,600.40 1111.877049180328,596.61 1116.3688524590164,594.12 1120.860655737705,594.22 1125.3524590163936,595.05 1129.844262295082,591.26 1134.3360655737706,585.50 1138.827868852459,579.04 1143.3196721311476,583.79 1147.811475409836,567.94 1152.3032786885246,590.25 1156.7950819672133,594.29 1161.2868852459017,594.46 1165.7786885245903,598.47 1170.2704918032787,601.48 1174.7622950819673,598.36 1179.2540983606557,596.59 1183.7459016393443,594.01 1188.237704918033,603.92 1192.7295081967213,613.66 1197.22131147541,601.67 1201.7131147540983,622.60 1206.204918032787,617.17 1210.6967213114754,616.94 1215.188524590164,615.15 1219.6803278688526,615.32 1224.172131147541,615.48 1228.6639344262296,616.27 1233.155737704918,617.91 1237.6475409836066,624.23 1242.139344262295,617.84 1246.6311475409836,614.27 1251.1229508196723,619.71 1255.6147540983607,615.92 1260.1065573770493,609.16 1264.5983606557377,607.11 1269.0901639344263,608.94 1273.5819672131147,606.00 1278.0737704918033,604.45 1282.565573770492,608.37 1287.0573770491803,609.84 1291.549180327869,606.29 1296.0409836065573,607.37 1300.532786885246,612.50 1305.0245901639344,603.62 1309.516393442623,602.19 1314.0081967213116,613.32 1318.5,614.20 1322.9918032786886,604.65 1327.483606557377,605.95 1331.9754098360656,600.25 1336.4672131147543,597.87 1340.9590163934427,597.51 1345.4508196721313,598.11 1349.9426229508197,600.87 1354.4344262295083,600.41 1358.9262295081967,618.48 1363.4180327868853,608.36 1367.909836065574,602.48 1372.4016393442623,602.81 1376.893442622951,611.66 1381.3852459016393,612.92 1385.877049180328,620.23 1390.3688524590164,617.98 1394.860655737705,618.64 1399.3524590163936,619.60 1403.844262295082,622.73 1408.3360655737706,622.21 1412.827868852459,624.13 1417.3196721311476,629.95 1421.811475409836,616.67 1426.3032786885246,617.32 1430.7950819672133,617.66 1435.2868852459017,618.19 1439.7786885245903,617.23 1444.2704918032787,617.63 1448.7622950819673,617.39 1453.2540983606557,618.01" fill="none" stroke="#c53d2f" stroke-width="3"/>
+  <rect x="1155" y="28" width="18" height="12" fill="#4f8fc9"/>
+  <text x="1180" y="39" class="legend">월누적강수량(mm)</text>
+  <line x1="1315" x2="1355" y1="34" y2="34" stroke="#c53d2f" stroke-width="3"/>
+  <text x="1364" y="39" class="legend">12개월 이동평균</text>
+  <text x="87.75" y="717" text-anchor="middle" class="axis-text">2001</text>
+<text x="195.55" y="717" text-anchor="middle" class="axis-text">2003</text>
+<text x="303.35" y="717" text-anchor="middle" class="axis-text">2005</text>
+<text x="411.16" y="717" text-anchor="middle" class="axis-text">2007</text>
+<text x="518.96" y="717" text-anchor="middle" class="axis-text">2009</text>
+<text x="626.76" y="717" text-anchor="middle" class="axis-text">2011</text>
+<text x="734.57" y="717" text-anchor="middle" class="axis-text">2013</text>
+<text x="842.37" y="717" text-anchor="middle" class="axis-text">2015</text>
+<text x="950.17" y="717" text-anchor="middle" class="axis-text">2017</text>
+<text x="1057.98" y="717" text-anchor="middle" class="axis-text">2019</text>
+<text x="1165.78" y="717" text-anchor="middle" class="axis-text">2021</text>
+<text x="1273.58" y="717" text-anchor="middle" class="axis-text">2023</text>
+<text x="1381.39" y="717" text-anchor="middle" class="axis-text">2025</text>
+  <text x="28" y="90" class="axis-text" transform="rotate(-90 28 90)">mm</text>
+  <text x="1456" y="744" text-anchor="end" class="axis-text">Source: KMA API Hub kma_sfcdd3.php, RN_DAY</text>
+</svg>
