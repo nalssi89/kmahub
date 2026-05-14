@@ -10,7 +10,8 @@
     "start": "node ./src/server.js",
     "test:mcp": "node ./scripts/smoke-mcp.js",
     "test:api": "node ./scripts/test-all.js",
-    "test:normal": "node ./scripts/test-normal-criteria.js"
+    "test:normal": "node ./scripts/test-normal-criteria.js",
+    "render:south-korea-table": "node ./scripts/render-south-korea-colored-tables.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
