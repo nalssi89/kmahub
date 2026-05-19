@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>전국 월별 기온·강수량 단일 화면으로 이동</title>
+  <style>
+    body {
+      margin: 0;
+      background: #ffffff;
+      color: #17212b;
+      font-family: Arial, "Malgun Gothic", sans-serif;
+      line-height: 1.5;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 80px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 26px;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 8px 0;
+      color: #5f6b76;
+      font-size: 14px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 14px;
+      border: 1px solid #1f5fbf;
+      color: #1f5fbf;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>전국 월별 기온·강수량 단일 화면</h1>
+    <p>공간분포 대시보드는 전체 표와 합쳐졌습니다. 같은 선택 조건을 유지해 단일 HTML 화면으로 이동합니다.</p>
+    <a id="target-link" href="south_korea_1973_202604_colored_anomaly_tables.html">단일 화면 열기</a>
+  </main>
+  <script>
+    const target = `south_korea_1973_202604_colored_anomaly_tables.html${window.location.search || ""}`;
+    document.getElementById("target-link").href = target;
+    window.location.replace(target);
+  </script>
+</body>
+</html>

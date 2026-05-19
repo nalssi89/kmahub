@@ -11,7 +11,8 @@
     "test:mcp": "node ./scripts/smoke-mcp.js",
     "test:api": "node ./scripts/test-all.js",
     "test:normal": "node ./scripts/test-normal-criteria.js",
-    "render:south-korea-table": "node ./scripts/render-south-korea-colored-tables.js"
+    "render:south-korea-table": "node ./scripts/render-south-korea-colored-tables.js",
+    "build:dashboard-geojson": "node ./scripts/build-dashboard-geojson.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",

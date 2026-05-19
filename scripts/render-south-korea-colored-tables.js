@@ -12,7 +12,7 @@ const DEFAULT_STATION_META = path.resolve("data", "map", "ASOS_stations.csv");
 const DEFAULT_GEOJSON = path.resolve("data", "map", "skorea-provinces-geo.json");
 const DEFAULT_OUTPUT = path.resolve("reports", "south_korea_1973_202604_colored_anomaly_tables.html");
 const DEFAULT_DASHBOARD_DATA = path.resolve("data", "dashboard", "south_korea_monthly_detail_data.js");
-const DEFAULT_GEOJSON_JS = path.resolve("data", "dashboard", "skorea_provinces_geo.js");
+const DEFAULT_GEOJSON_JS = path.resolve("data", "dashboard", "skorea_provinces_geo_simplified.js");
 
 const MONTHS = Array.from({ length: 12 }, (_, index) => `${index + 1}월`);
 const TEMPERATURE_VARIABLES = new Set(["tavg", "tmax", "tmin"]);
@@ -350,6 +350,12 @@ function buildDetailData(sections, stationMonthly, stationMeta, stationNormals) 
         const departure = section.kind === "temperature"
           ? parsed.value
           : parsed.value - normal;
+        const normalLower = section.kind === "temperature"
+          ? normal - criteria.halfRange[month - 1]
+          : criteria.lower[month - 1];
+        const normalUpper = section.kind === "temperature"
+          ? normal + criteria.halfRange[month - 1]
+          : criteria.upper[month - 1];
         const ratio = section.kind === "precipitation" && normal > 0
           ? (parsed.value / normal) * 100
           : null;
@@ -402,6 +408,8 @@ function buildDetailData(sections, stationMonthly, stationMeta, stationNormals) 
             value: round(parsed.value, 1),
             observed: round(observed, 1),
             normal: round(normal, 1),
+            lower: round(normalLower, 1),
+            upper: round(normalUpper, 1),
             departure: round(departure, 1),
             ratio: ratio === null ? null : round(ratio, 1),
             sign: parsed.sign,
@@ -439,7 +447,7 @@ function escapeHtml(value) {
 }
 
 function renderTable(section) {
-  const body = section.rows.map((row) => {
+  const body = [...section.rows].sort((left, right) => Number(right.year) - Number(left.year)).map((row) => {
     const cells = row.values.map((cell, index) => {
       const month = index + 1;
       const parsed = parseValueCell(cell);
@@ -453,7 +461,7 @@ function renderTable(section) {
     return `<tr><th scope="row">${escapeHtml(row.year)}</th>${cells}</tr>`;
   }).join("\n");
 
-  return `<section>
+  return `<section class="data-section" data-variable="${escapeHtml(section.variable)}">
   <h2>${escapeHtml(section.title)}</h2>
   <div class="table-wrap">
     <table>
@@ -475,7 +483,7 @@ function relativeScriptPath(outputPath, targetPath) {
 
 function clientScript() {
   const detailStore = window.KMA_MONTHLY_DETAIL_DATA || { details: {} };
-  const provinceGeojson = window.KMA_SOUTH_KOREA_PROVINCES || null;
+  const provinceGeojson = window.KMA_SOUTH_KOREA_PROVINCES_SIMPLIFIED || window.KMA_SOUTH_KOREA_PROVINCES || null;
   const activeCellClass = "active-cell";
 
   const elements = {
@@ -483,17 +491,103 @@ function clientScript() {
     valueLabel: document.getElementById("metric-value-label"),
     value: document.getElementById("metric-value"),
     normal: document.getElementById("metric-normal"),
+    similarRange: document.getElementById("metric-similar-range"),
     departure: document.getElementById("metric-departure"),
     ratio: document.getElementById("metric-ratio"),
     bars: document.getElementById("distribution-bars"),
     tableBody: document.getElementById("station-table-body"),
     map: document.getElementById("station-map"),
     note: document.getElementById("detail-note"),
+    variableTabs: Array.from(document.querySelectorAll("[data-variable-tab]")),
   };
+
+  function detailPanel() {
+    return document.getElementById("detail-panel");
+  }
+
+  function parseDetailKey(key) {
+    const [variable, year, month] = key.split(":");
+    return { variable, year: Number(year), month: Number(month) };
+  }
+
+  function detailKey(variable, year, month) {
+    return `${variable}:${year}:${month}`;
+  }
+
+  function syncUrl(detail) {
+    const params = new URLSearchParams();
+    params.set("var", detail.variable);
+    params.set("year", String(detail.year));
+    params.set("month", String(detail.month));
+    window.history.replaceState(null, "", `${window.location.pathname}?${params.toString()}`);
+  }
+
+  function showVariable(variable, options = {}) {
+    document.querySelectorAll(".data-section").forEach((section) => {
+      section.hidden = section.dataset.variable !== variable;
+    });
+    elements.variableTabs.forEach((button) => {
+      const active = button.dataset.variableTab === variable;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-selected", active ? "true" : "false");
+    });
+
+    if (options.selectCell === false) return;
+    const params = new URLSearchParams(window.location.search);
+    const requestedKey = detailKey(variable, params.get("year"), params.get("month"));
+    const cell = document.querySelector(`.data-section[data-variable="${variable}"] td.clickable[data-detail-key="${requestedKey}"]`)
+      || document.querySelector(`.data-section[data-variable="${variable}"] td.clickable`);
+    if (cell) renderDetail(cell.dataset.detailKey, cell, { scroll: options.scroll });
+  }
 
   function formatNumber(value, unit = "", fallback = "-") {
     if (value === null || value === undefined || Number.isNaN(Number(value))) return fallback;
     return `${Number(value).toLocaleString("ko-KR", { maximumFractionDigits: 1 })}${unit}`;
+  }
+
+  const nationalNormalCriteria = {
+    tavg: {
+      normal: [-0.9, 1.2, 6.1, 12.1, 17.3, 21.4, 24.6, 25.1, 20.5, 14.3, 7.6, 1.1],
+      halfRange: [0.6, 0.6, 0.5, 0.5, 0.3, 0.3, 0.6, 0.5, 0.3, 0.4, 0.6, 0.6],
+    },
+    tmax: {
+      normal: [4.4, 7, 12.2, 18.6, 23.5, 26.7, 28.9, 29.8, 25.9, 20.7, 13.6, 6.6],
+      halfRange: [0.6, 0.6, 0.6, 0.6, 0.4, 0.4, 0.7, 0.6, 0.3, 0.4, 0.5, 0.7],
+    },
+    tmin: {
+      normal: [-5.7, -3.9, 0.5, 6, 11.6, 16.8, 21.2, 21.6, 16.1, 9, 2.5, -3.6],
+      halfRange: [0.7, 0.6, 0.4, 0.6, 0.3, 0.3, 0.5, 0.5, 0.5, 0.6, 0.7, 0.6],
+    },
+    precip: {
+      lower: [17.4, 27.5, 42.7, 70.3, 79.3, 101.6, 245.9, 225.3, 84.2, 37, 30.7, 19.8],
+      upper: [26.8, 44.9, 58.5, 99.3, 125.5, 174, 308.2, 346.7, 202.3, 64.3, 55.1, 28.6],
+    },
+  };
+
+  function nationalSimilarRange(detail) {
+    if (Number.isFinite(detail.national?.lower) && Number.isFinite(detail.national?.upper)) {
+      return {
+        lower: detail.national.lower,
+        upper: detail.national.upper,
+      };
+    }
+    const criteria = nationalNormalCriteria[detail.variable];
+    const index = detail.month - 1;
+    if (!criteria || index < 0 || index > 11) return null;
+    if (detail.kind === "temperature") {
+      return {
+        lower: criteria.normal[index] - criteria.halfRange[index],
+        upper: criteria.normal[index] + criteria.halfRange[index],
+      };
+    }
+    return {
+      lower: criteria.lower[index],
+      upper: criteria.upper[index],
+    };
+  }
+
+  function formatRange(range, unit) {
+    return range ? `${formatNumber(range.lower, unit)} ~ ${formatNumber(range.upper, unit)}` : "-";
   }
 
   function signClass(sign, kind) {
@@ -779,6 +873,7 @@ function clientScript() {
     const config = surfaceConfig(detail, fieldValues);
     const surface = buildSurface(projectedStations, width, height, margin, config);
     const clipId = `land-clip-${detail.variable}-${detail.year}-${detail.month}`;
+    const mapTitle = `${detail.year}년 ${detail.month}월 ${detail.title}`;
 
     const stationPoints = projectedStations.map((station) => {
       const value = formatNumber(station.value, detail.unit);
@@ -796,12 +891,16 @@ function clientScript() {
     elements.map.innerHTML = `<svg viewBox="0 0 ${width} ${height}" role="img">
       <defs><clipPath id="${clipId}">${clipPaths}</clipPath></defs>
       <rect x="0" y="0" width="${width}" height="${height}" fill="#ffffff"></rect>
+      <g class="map-title">
+        <rect x="16" y="14" width="282" height="28"></rect>
+        <text x="25" y="33">${mapTitle}</text>
+      </g>
       <g clip-path="url(#${clipId})">${surface.cells}${surface.contours}</g>
       ${provincePaths}
       <g class="surface-legend">
-        <rect x="16" y="16" width="132" height="42"></rect>
-        <text x="25" y="33">${config.label}</text>
-        <text x="25" y="50">${formatNumber(surface.min, config.unit)} ~ ${formatNumber(surface.max, config.unit)}</text>
+        <rect x="16" y="52" width="132" height="42"></rect>
+        <text x="25" y="69">${config.label}</text>
+        <text x="25" y="86">${formatNumber(surface.min, config.unit)} ~ ${formatNumber(surface.max, config.unit)}</text>
       </g>
       ${stationPoints}
     </svg>`;
@@ -823,7 +922,7 @@ function clientScript() {
     }).join("");
   }
 
-  function renderDetail(key, cell) {
+  function renderDetail(key, cell, options = {}) {
     const detail = detailStore.details[key];
     if (!detail) return;
 
@@ -837,25 +936,35 @@ function clientScript() {
       ? formatNumber(detail.national.observed, "mm")
       : formatNumber(detail.national.observed, "℃");
     elements.normal.textContent = formatNumber(detail.national.normal, detail.unit);
+    elements.similarRange.textContent = formatRange(nationalSimilarRange(detail), detail.unit);
     elements.departure.textContent = formatNumber(detail.national.departure, detail.unit);
     elements.ratio.textContent = isPrecip ? formatNumber(detail.national.ratio, "%") : "-";
     elements.note.textContent = `전국 구분은 ${detail.national.label}이며, 지도와 표는 자료가 있는 ${detail.stationSummary.count}개 대표 지점의 지점별 평년분포입니다.`;
+    syncUrl(detail);
 
     renderBars(detail);
     renderStationTable(detail);
     renderMap(detail);
+
+    if (options.scroll) {
+      detailPanel()?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
   }
 
   function selectDefaultCell() {
-    const cells = Array.from(document.querySelectorAll("td.clickable"));
-    const latest = [...cells].reverse().find((cell) => detailStore.details[cell.dataset.detailKey]);
-    if (latest) renderDetail(latest.dataset.detailKey, latest);
+    const params = new URLSearchParams(window.location.search);
+    const requestedVariable = params.get("var");
+    const variable = elements.variableTabs.some((button) => button.dataset.variableTab === requestedVariable)
+      ? requestedVariable
+      : "precip";
+    showVariable(variable);
   }
 
   document.addEventListener("click", (event) => {
     const cell = event.target.closest("td.clickable");
     if (!cell) return;
-    renderDetail(cell.dataset.detailKey, cell);
+    showVariable(parseDetailKey(cell.dataset.detailKey).variable, { selectCell: false });
+    renderDetail(cell.dataset.detailKey, cell, { scroll: true });
   });
 
   document.addEventListener("keydown", (event) => {
@@ -863,7 +972,12 @@ function clientScript() {
     const cell = event.target.closest("td.clickable");
     if (!cell) return;
     event.preventDefault();
+    showVariable(parseDetailKey(cell.dataset.detailKey).variable, { selectCell: false });
     renderDetail(cell.dataset.detailKey, cell);
+  });
+
+  elements.variableTabs.forEach((button) => {
+    button.addEventListener("click", () => showVariable(button.dataset.variableTab, { scroll: true }));
   });
 
   selectDefaultCell();
@@ -979,7 +1093,7 @@ function renderHtml(sections, inputPath, outputPath, dashboardDataPath, geojsonJ
 
     .detail-meta {
       display: grid;
-      grid-template-columns: repeat(4, minmax(110px, 1fr));
+      grid-template-columns: repeat(5, minmax(110px, 1fr));
       gap: 8px;
       margin-bottom: 12px;
     }
@@ -1003,6 +1117,38 @@ function renderHtml(sections, inputPath, outputPath, dashboardDataPath, geojsonJ
       font-size: 20px;
       font-weight: 700;
       letter-spacing: 0;
+    }
+
+    .metric span.range-value {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+
+    .variable-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0 12px;
+    }
+
+    .variable-tabs button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      padding: 0 11px;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+      background: #ffffff;
+      cursor: pointer;
+    }
+
+    .variable-tabs button.active {
+      border-color: var(--active);
+      color: var(--active);
+      box-shadow: inset 0 0 0 1px var(--active);
     }
 
     .bars {
@@ -1082,6 +1228,17 @@ function renderHtml(sections, inputPath, outputPath, dashboardDataPath, geojsonJ
       font-weight: 700;
     }
 
+    .map-title rect {
+      fill: rgba(255, 255, 255, 0.9);
+      stroke: var(--border);
+    }
+
+    .map-title text {
+      fill: #17212b;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
     .station-halo {
       fill: rgba(255, 255, 255, 0.28);
       stroke-width: 2.4;
@@ -1116,6 +1273,8 @@ function renderHtml(sections, inputPath, outputPath, dashboardDataPath, geojsonJ
 
     .table-wrap {
       overflow-x: auto;
+      max-height: 264px;
+      overflow-y: auto;
       border: 1px solid var(--border);
     }
 
@@ -1186,6 +1345,10 @@ function renderHtml(sections, inputPath, outputPath, dashboardDataPath, geojsonJ
     td.precip-wet { background: var(--precip-wet); }
     td.missing { background: var(--missing); color: #9aa3ad; }
 
+    .data-section[hidden] {
+      display: none;
+    }
+
     .note {
       color: var(--muted);
       font-size: 12px;
@@ -1208,6 +1371,12 @@ function renderHtml(sections, inputPath, outputPath, dashboardDataPath, geojsonJ
     <h1>전국 월별 기온·강수량 편차 대시보드 (1973-2026.04)</h1>
     <p>표의 셀을 클릭하면 해당 연월의 전국값, 평년값, 편차와 62개 지점의 낮음·비슷·높음 또는 적음·비슷·많음 분포가 표시됩니다.</p>
     <p>원자료: ${escapeHtml(inputPath)} / 평년: 1991-2020 / 생성일: ${generatedAt}</p>
+    <div class="variable-tabs" role="tablist" aria-label="요소 선택">
+      <button type="button" data-variable-tab="precip" role="tab">강수량</button>
+      <button type="button" data-variable-tab="tavg" role="tab">평균기온</button>
+      <button type="button" data-variable-tab="tmin" role="tab">최저기온</button>
+      <button type="button" data-variable-tab="tmax" role="tab">최고기온</button>
+    </div>
     <div class="legend" aria-label="색상 범례">
       <span class="chip"><span class="swatch" style="background: var(--similar)"></span>비슷</span>
       <span class="chip"><span class="swatch" style="background: var(--temp-cool)"></span>기온 낮음</span>
@@ -1222,6 +1391,7 @@ function renderHtml(sections, inputPath, outputPath, dashboardDataPath, geojsonJ
         <div class="detail-meta">
           <div class="metric"><strong id="metric-value-label">전국값</strong><span id="metric-value">-</span></div>
           <div class="metric"><strong>평년값</strong><span id="metric-normal">-</span></div>
+          <div class="metric"><strong>비슷범위</strong><span id="metric-similar-range" class="range-value">-</span></div>
           <div class="metric"><strong>편차</strong><span id="metric-departure">-</span></div>
           <div class="metric"><strong>강수 평년비</strong><span id="metric-ratio">-</span></div>
         </div>
@@ -1281,7 +1451,9 @@ async function main() {
   await mkdir(path.dirname(args.output), { recursive: true });
   await mkdir(path.dirname(args.dashboardData), { recursive: true });
   await writeFile(args.dashboardData, `window.KMA_MONTHLY_DETAIL_DATA = ${JSON.stringify(detailData)};\n`, "utf8");
-  await writeFile(args.geojsonJs, `window.KMA_SOUTH_KOREA_PROVINCES = ${geojsonText};\n`, "utf8");
+  if (!path.basename(args.geojsonJs).includes("simplified")) {
+    await writeFile(args.geojsonJs, `window.KMA_SOUTH_KOREA_PROVINCES = ${geojsonText};\n`, "utf8");
+  }
   await writeFile(args.output, renderHtml(sections, args.input, args.output, args.dashboardData, args.geojsonJs), "utf8");
 
   console.log(JSON.stringify({
